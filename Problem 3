@@ -1,0 +1,11 @@
+k=bin(int(input()))
+count=1
+c=0
+for i in range(len(a)-3):
+    if k[i+2]==k[i+3]:
+        count+=1
+    else:
+        c=max(c,count)
+        count=1
+        continue
+print(c)
